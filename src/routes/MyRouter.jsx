@@ -4,6 +4,7 @@ import Layout from "../Layout";
 import ErrorPage from "../pages/ErrorPage";
 import DashBoard from "../pages/DashBoard";
 import ListedBooks from "../pages/ListedBooks";
+import BookDetail from "../components/BookDetail";
 
 export const myRouter = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ export const myRouter = createBrowserRouter([
       {
         path: "/",
         element: <HomePage></HomePage>,
+      },
+      {
+        path: "/books/:bookId",
+        element: <BookDetail></BookDetail>,
       },
       {
         path: "/dashboard",
