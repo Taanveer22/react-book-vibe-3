@@ -19,6 +19,7 @@ export const myRouter = createBrowserRouter([
       {
         path: "/books/:bookId",
         element: <BookDetail></BookDetail>,
+        loader: () => fetch("/booksData.json"),
       },
       {
         path: "/dashboard",
