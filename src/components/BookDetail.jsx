@@ -23,8 +23,9 @@ const BookDetail = () => {
   const handleAddToWishlist = (id) => {
     setWishList(id);
   };
+  
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <div className="hero bg-green-300 min-h-screen mb-12">
         <div className="hero-content flex-col lg:flex-row">
           <img src={image} className="max-w-sm rounded-lg shadow-2xl" />

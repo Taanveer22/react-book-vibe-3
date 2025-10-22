@@ -22,12 +22,13 @@ export const myRouter = createBrowserRouter([
         loader: () => fetch("/booksData.json"),
       },
       {
-        path: "/dashboard",
-        element: <DashBoard></DashBoard>,
-      },
-      {
         path: "listedbooks",
         element: <ListedBooks></ListedBooks>,
+        loader: () => fetch("/booksData.json"),
+      },
+      {
+        path: "/dashboard",
+        element: <DashBoard></DashBoard>,
       },
     ],
   },
