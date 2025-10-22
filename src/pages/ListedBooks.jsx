@@ -9,7 +9,7 @@ import { getWishList } from "../utilities/localStorage2";
 const ListedBooks = () => {
   const [readList, setReadList] = useState([]);
   const [wishList, setWishList] = useState([]);
-  
+
   const booksLoaderData = useLoaderData();
   // console.log(booksLoaderData);
 
